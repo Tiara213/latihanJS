@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript2</title>
+    <script>
+        function klik() {
+            const rupiah = 14650; //konstanta
+            let dollar = document.getElementById("dollar").value;
+            console.log("Dollar : $ zazaa" + dollar);
+            let hasil_rupiah = rupiah / dollar
+            console.log("Rupiah : Rp." + hasil_rupiah);
+            let area_hasil = document.getElementById("hasil");
+            area_hasil.innerHTML = " Rp." + hasil_rupiah;
+        }
+    </script>
+</head>
+<body>
+    <h3>Menghitung Rupiah Ke Dollar</h3>
+    Masukan jumlah Dollar :
+    <input type="number" value="" size="10" id="dollar">
+    <br />
+    <button onclick="klik()">Hitung</button>
+    <br />Dalam Rupiah : <span id="hasil"></span>
+</body>
+</html>
